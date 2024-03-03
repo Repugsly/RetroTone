@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroTone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Logout portion of the visualizer-->
+
+    <ul>
+        <li><a href="./index.html" class="box">Logout</a></li>
+    </ul>
+
+    <!--Audio player buttons section-->
+
+    <div id="control-container">
+        <div id="control-glow">
+            <button onclick="playAudio()" type="button" id="btn">
+                <span class="glyphicon" glyphicon-play>play</span>
+            </button>
+
+            <button onclick="stopAudio()" type="button" id="stop-btn">
+                <span class="glyphicon" glyphicon-stop>stop</span>
+            </button>
+        
+            <button onclick="pauseAudio()" type="button" id="pause-btn">
+                <span class="glyphicon" glyphicon-pause>pause</span>
+            </button>
+        
+            <button onclick="muteAudio()" type="button" id="mute-btn">
+                <span class="glyphicon" glyphicon>mute</span>
+            </button>
+
+        </div>
+    </div>
+    
+    <!--Audio for the visualizer, I do not own this song I am only using it for project purposes.-->
+
+    <audio id="myAudio">
+        <source src="./Music/The Man Who Sold The World.mp3" type="audio/mp3">
+    </audio>
+
+    <!--Library package for visualizer support-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.151.3/three.min.js"></script>"
+    <script src="script.js"></script>
+</body>
+</html>
